@@ -23,6 +23,7 @@ app.configure('development', function() {
 
 app.get('/', routes.index);
 app.get('/649', routes.l649);
+app.get('/638', routes.l638);
 
 http.createServer(app).listen(app.get('port'), function() {
   console.log("Express server listening on port " + app.get('port'));
