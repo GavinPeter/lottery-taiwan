@@ -26,6 +26,7 @@ exports.l638 = function(req, res, next) {
             lotteryArray.push($(item).text());
         });
         res.json(200, {
+            "date": date,
             "result": lotteryArray,
             "special": special
         });
